@@ -1,7 +1,6 @@
 .npmrc
 .env
 docs/index.html
-config.json
 
 # Logs
 logs
