@@ -17,7 +17,7 @@ describe('api.tags', () => {
           assert.isOk(tags.find(tag => tag.name.indexOf("teste") >= 0))
           done()
         })
-    })
+    }).timeout(5000)
 
     it('should send GET request to /tags/', (done) => {
 
@@ -27,7 +27,7 @@ describe('api.tags', () => {
           assert.isOk(tags.find(tag => tag.name.indexOf("") >= 0))
           done()
         });
-    })
+    }).timeout(5000)
   })
 
   describe('create', () => {
@@ -43,7 +43,7 @@ describe('api.tags', () => {
               done()
             })
         });
-    })
+    }).timeout(5000)
   })
 })
 

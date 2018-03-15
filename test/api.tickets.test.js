@@ -26,7 +26,7 @@ describe('api.tickets', () => {
               })
           }
         })
-    })
+    }).timeout(30000)
 
     it('should send GET request to /search?status=novo|pendente&openDate=<2018-03-01', (done) => {
       let options = {
@@ -46,7 +46,7 @@ describe('api.tickets', () => {
               })
           }
         })
-    })
+    }).timeout(30000)
   })
 })
 

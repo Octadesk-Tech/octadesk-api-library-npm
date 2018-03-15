@@ -16,6 +16,6 @@ describe('api.login', () => {
           assert.isOk(token)
           done()
         })
-    })
+    }).timeout(5000)
   })
 })
