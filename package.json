@@ -2,12 +2,14 @@
   "name": "octadesk-api",
   "version": "1.0.0",
   "description": "Node proxy for Octadesk API - https://api.octadesk.services",
-  "main": "./lib",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "mocha test"
+    "build": "node index.js",
+    "test": "mocha test",
+    "docs": "jsdoc -c .jsdoc.rc"
   },
   "keywords": [
     "octadesk",
@@ -18,6 +20,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "chai": "^4.1.2",
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.5.5",
     "mocha": "^5.0.4",
     "nconf": "^0.10.0"
   }
